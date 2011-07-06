@@ -1974,7 +1974,7 @@ class Dot(Graph):
                 data = stderr.read()
                 if not data:
                     break
-                stderr_output.append(data)
+                stderr_output.append(str(data, 'ascii'))
             stderr.close()
                 
             if stderr_output:
